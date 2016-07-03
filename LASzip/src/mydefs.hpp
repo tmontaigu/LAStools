@@ -45,6 +45,8 @@
 #endif
 #endif // _WIN32
 
+#include <Windows.h> //DGM: required for compilation with VS 2012 and 2013
+
 typedef char               CHAR;
 
 typedef int                I32;
@@ -69,7 +71,7 @@ typedef double             F64;
 #if defined(_MSC_VER) && (_MSC_VER < 1300) || defined (__MINGW32__)
 typedef int                BOOL;
 #else
-typedef bool               BOOL;
+//typedef bool               BOOL; //DGM: conflicts with Windows.h definition
 #endif
 
 typedef union U32I32F32 { U32 u32; I32 i32; F32 f32; } U32I32F32;

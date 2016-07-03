@@ -4,3 +4,6 @@ LASlib.ncb
 LASlib.opt
 LASlib.plg
 *~
+*.user
+*.sdf
+*.suo
