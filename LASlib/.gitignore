@@ -8,3 +8,5 @@ LASlib.plg
 *.sdf
 *.suo
 *.opensdf
+/VC11/
+/VC12/
